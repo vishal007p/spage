@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+    .Home {
+        width: 80%;
+        margin: auto;
+
+        .mainContainer {
+            .contentbox {
+                margin-top: 30px;
+                
+                .homeContent {
+                    h1 {
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 58.9674px;
+                        line-height: 24px;
+
+                    }
+
+                    span {
+
+                        font-family: 'Ubuntu';
+                        margin-top: 20px;
+                        font-style: italic;
+                        font-weight: 300;
+                        font-size: 50px;
+                        color: #272A38;
+                    }
+
+                    p {
+                        margin-top: 60px;
+                        width: 40%;
+                        font-family: 'Ubuntu';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16;
+                        line-height: 50px;
+                        text-align: justify;
+                        letter-spacing: -0.02em;
+
+                        @media screen and (max-width: 800px) {
+                            width: 100%;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                .HomeBanner {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+
+                    button {
+                        cursor: pointer;
+                        margin-left: 65px;
+                        width: 260px;
+                        height: 70px;
+                        color: white;
+                        background: #000000;
+
+                        @media screen and (max-width: 800px) {
+                            margin-left: 0px;
+                            width: 250px;
+                            height: 60px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .getStarted {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .getBtn {
+            button {
+                width: 200px;
+                height: 50px;
+                color: white;
+                background: #000000;
+                border-radius: 30px;
+            }
+        }
+
+        .loginBtn {
+            button {
+                margin-top: 20px;
+                background: none;
+                border: none;
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 9080px) {
+            display: none;
+
+        }
+
+        @media screen and (max-width: 600px) {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+}
+
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+img.vert-move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
